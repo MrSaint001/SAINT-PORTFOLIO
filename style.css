@@ -38,6 +38,7 @@ body {
 
     background:
 radial-gradient(circle at center, #243b55, #000);
+
 overflow:hidden;
 
     display:flex;
