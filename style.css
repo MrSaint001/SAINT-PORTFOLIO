@@ -661,7 +661,10 @@ section p {
 .project-image {
     height:200px;
 }
-
+.hero-text button {
+    display:block;
+    margin:25px auto;
+}
 
 
 
