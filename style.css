@@ -675,6 +675,8 @@ section p {
 
 content:"";
 
+pointer-events:none;
+
 position:absolute;
 
 width:500px;
