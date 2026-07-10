@@ -36,7 +36,9 @@ body {
     width:100%;
     height:100vh;
 
-    background:#000;
+    background:
+radial-gradient(circle at center, #243b55, #000);
+overflow:hidden;
 
     display:flex;
     flex-direction:column;
@@ -749,3 +751,41 @@ to {
 
 }
 /* SAINT mobile update */
+/* LOADING SCREEN LIGHT ANIMATION */
+
+.loader::before {
+
+content:"";
+
+position:absolute;
+
+width:400px;
+height:400px;
+
+background:#00ffff;
+
+filter:blur(150px);
+
+opacity:0.25;
+
+animation:loadingGlow 5s infinite alternate;
+
+}
+
+
+@keyframes loadingGlow {
+
+from {
+
+transform:translate(-100px,-50px);
+
+}
+
+
+to {
+
+transform:translate(100px,50px);
+
+}
+
+}
