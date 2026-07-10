@@ -585,8 +585,9 @@ padding-bottom:150px;
 
 @media(max-width:900px){
 
-.hero {
-    min-height:100vh;
+    .hero {
+    min-height:auto;
+    padding-bottom:40px;
 }
 
 
@@ -611,7 +612,7 @@ nav a {
 
 .hero-text {
     height:auto;
-    padding:40px 25px;
+    padding:20px 25px 40px;
     text-align:center;
 }
 
