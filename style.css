@@ -577,40 +577,87 @@ padding-bottom:150px;
 
 
 /* =====================
-      MOBILE
+   MOBILE DESIGN
 ===================== */
-
-
 
 @media(max-width:900px){
 
-
-.hero-text h1 {
-
-
-font-size:45px;
-
-
+.hero {
+    min-height:100vh;
 }
-
 
 
 nav {
-
-
-padding:25px;
-
+    flex-direction:column;
+    gap:20px;
+    padding:25px 5%;
 }
 
+
+nav h2 {
+    font-size:32px;
+    letter-spacing:5px;
+}
 
 
 nav a {
-
-
-margin-left:10px;
-
-
+    font-size:16px;
+    margin-left:12px;
 }
+
+
+.hero-text {
+    height:auto;
+    padding:40px 25px;
+    text-align:center;
+}
+
+
+.hero-text h1 {
+    font-size:42px;
+    letter-spacing:3px;
+}
+
+
+.hero-text p {
+    font-size:18px;
+}
+
+
+button {
+    width:200px;
+}
+
+
+section {
+    padding:70px 5%;
+}
+
+
+section h2 {
+    font-size:38px;
+}
+
+
+section p {
+    font-size:18px;
+}
+
+
+.projects-container {
+    gap:25px;
+}
+
+
+.project-card {
+    width:100%;
+}
+
+
+.project-image {
+    height:200px;
+}
+
 
 
 
@@ -659,5 +706,45 @@ transform:translate(-20%, 20%);
 
 }
 
+
+}
+/* =====================
+   SCROLL ANIMATIONS
+===================== */
+
+section {
+    animation: fadeIn 1.2s ease;
+}
+
+
+.project-card {
+    animation: slideUp 1s ease;
+}
+
+
+@keyframes slideUp {
+
+from {
+    opacity:0;
+    transform:translateY(60px);
+}
+
+to {
+    opacity:1;
+    transform:translateY(0);
+}
+
+}
+
+
+@keyframes fadeIn {
+
+from {
+    opacity:0;
+}
+
+to {
+    opacity:1;
+}
 
 }
